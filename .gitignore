@@ -1,0 +1,21 @@
+# Ignore database files
+instance/*.db
+
+# Ignore compiled bytecode files
+web/__pycache__/
+*.pyc
+
+# Ignore other Python related cache and log files
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.swp
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
