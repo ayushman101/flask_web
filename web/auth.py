@@ -39,7 +39,7 @@ def login():
                 flash('Incorrect Password, Try Again', category='error')
         else:
             flash('Email does not  exist', category='error')
-    return render_template('login.html')
+    return render_template('login.html', user=current_user)
 
 
 
@@ -83,4 +83,4 @@ def sign_up():
             return redirect(url_for('view.home')) 
             #we give the name of the blueprint.function_name as url  
 
-    return render_template('sign-up.html')
+    return render_template('sign-up.html',user=current_user)
